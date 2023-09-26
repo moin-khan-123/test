@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box{
+    height: 700px;
+    width: 400px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#moin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    margin: 10px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: ;
+}
