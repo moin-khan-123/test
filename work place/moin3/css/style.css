@@ -1,0 +1,14 @@
+.pb-2 img{
+    width: 100px;
+    height: auto;
+}
+
+.col-10 img{
+    height: 440px;
+    width: auto;
+    padding: 2px;
+}
+
+.pb-2 {
+    padding: 4px;
+}

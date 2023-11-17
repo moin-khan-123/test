@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container position-relative my-4">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0 pb-0 mb-4">
+        <div class="container-fluid bg-primary">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">About company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">Shops</a>
+              </li>
+              <li class="nav-item bg-danger p-1 text-secondary-emphasis">
+                <a class="nav-link active text-white" href="#">Stocks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#"
+                  >Deliveryy and payment</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="icons d-flex mr-2 gap-4">
+                <i class="ri-facebook-circle-fill fs-2 text-white"></i>
+                <i class="ri-facebook-circle-fill fs-2 text-white"></i>
+                <i class="ri-facebook-circle-fill fs-2 text-white"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse h-100" id="navbarNavDropdown">
+            <ul class="navbar-nav d-flex justify-content-between w-100">
+              <li class="nav-item d-flex align-items-center">
+                <i class="ri-building-fill"></i>
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="ri-map-pin-line"></i>
+                <a class="nav-link active" href="#">Features</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="ri-phone-line"></i>
+                <a class="nav-link active" href="#">Pricing</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <i class="ri-shopping-cart-2-line"></i>
+                <a class="nav-link active" href="#">jshask</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide mt-4"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/images/IMG_7565.JPG"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="./assets/images/IMG_7567.JPG"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span></button
+          ><button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+      <section>
+        <div class="header d-flex justify-center align-items-center gap-5">
+          <div class="head"><h1 class="pt-5 pb-2">sale of goods</h1></div>
+          <div class="head pt-5"><a href="">view all</a></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="header d-flex justify-center align-items-center gap-5">
+          <div class="head"><h1 class="pt-5 pb-2">popular products</h1></div>
+          <div class="head pt-5"><a href="">view all</a></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="header d-flex justify-center align-items-center gap-5">
+          <div class="head"><h1 class="pt-5 pb-2">hit</h1></div>
+          <div class="head pt-5"><a href="">view all</a></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-between pb-5">
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-3">
+            <!--  -->
+            <div class="card rounded-0 position-relative" style="width: 18rem">
+              <div class="position-absolute bg-warning px-3 p-1 custom top-50">
+                promotion-20
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3"
+              >
+                <div class="">
+                  <h6 class="text-success">in stock</h6>
+                </div>
+                <div class="">
+                  <i class="ri-verified-badge-line text-info fs-2"></i>
+                </div>
+              </div>
+              <img
+                src="./assets/images/IMG_7564.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="fs-6">PC374749</p>
+                <h4 class="fw-bold">Lorem ipsum dolor <br />sit amet.</h4>
+                <div class="d-flex justify-content-between w-100">
+                  <div class="star">
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill text-warning"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
+                  <div class="pe-4">
+                    <i class="ri-chat-4-line text-secondary opacity-25"></i>
+                  </div>
+                </div>
+                <h5 class="opacity-25 m-0"><del>$643</del></h5>
+                <div
+                  class="banner d-flex justify-content-between align-items-center"
+                >
+                  <div class="work"><h4 class="fw-bold">$546</h4></div>
+                  <div>
+                    <button type="button" class="btn btn-warning">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="header d-flex justify-center align-items-center gap-5">
+          <div class="head"><h1 class="pt-5 pb-2 fw-bold">Our nows</h1></div>
+          <div class="head pt-5"><a href="">Read all</a></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card border border-0" style="width: 18rem">
+              <img
+                src="./assets/images/IMG_7567.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body border border-0">
+                <h6 class="opacity-25">12.3439623</h6>
+                <h5 class="card-title fw-bold">Lorem ipsum dolor, sit elit.</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title
+                </p>
+                <a href="#" class="btn btn-light text-danger ps-0"
+                  >Read more ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-0" style="width: 18rem">
+              <img
+                src="./assets/images/IMG_7567.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body border border-0">
+                <h6 class="opacity-25">12.3439623</h6>
+                <h5 class="card-title fw-bold">Lorem ipsum dolor, sit elit.</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title
+                </p>
+                <a href="#" class="btn btn-light text-danger ps-0"
+                  >Read more ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-0" style="width: 18rem">
+              <img
+                src="./assets/images/IMG_7567.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body border border-0">
+                <h6 class="opacity-25">12.3439623</h6>
+                <h5 class="card-title fw-bold">Lorem ipsum dolor, sit elit.</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title
+                </p>
+                <a href="#" class="btn btn-light text-danger ps-0"
+                  >Read more ></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-0" style="width: 18rem">
+              <img
+                src="./assets/images/IMG_7567.JPG"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="opacity-25">12.3439623</h6>
+                <h5 class="card-title fw-bold">Lorem ipsum dolor, sit elit.</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title
+                </p>
+                <a href="#" class="btn btn-light text-danger ps-0"
+                  >Read more ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div
+            class="group d-flex justify-content-between bg-primary text-white p-5 mb-5"
+          >
+            <div class="sect1 d-flex gap-2 bg-danger  ">
+             
+              <i class="ri-building-line fs-1 p-0"></i>
+              <div class="">
+                <p class="m-0">Lorem, ipsum dolor.</p>
+                <a href="" class="text-danger">mkoih</a>
+              </div>
+            </div>
+            <div class="sect2">
+              <p>lokijui</p>
+              <p>ghkjgfg</p>
+              <p>gjkktyu</p>
+              <p>gjdyihl</p>
+            </div>
+            <div class="sect">
+              <p>loughityfguj</p>
+              <p>hkgryjkuo</p>
+              <p>hfckyrdkryu</p>
+              <p>jklgyrtukdet</p>
+            </div>
+            <div class="sect">
+              <p>sftyi</p>
+              <p>dfuiohy</p>
+              <p>dfuok</p>
+              <p>erigg</p>
+            </div>
+            <div class="sect">
+              <p>fihlgufh</p>
+              <p>tke;igr</p>
+              <p>idfgige</p>
+              <p>sweiolfr</p>
+            </div>
+          </div>
+        </section>
+        <i
+          class="ri-home-gear-fill fs-1 bg-danger text-white position-absolute top-50 start-100 rounded-circle"
+        ></i>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

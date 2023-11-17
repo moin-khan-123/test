@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    /* background-color: gray; */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+.nav img{
+    height: 30px;
+    width: 30px;
+}
+
+.nright a,.nleft a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(29, 191, 115);
+    margin-left: 20px;
+    transition: all 1s;
+}
+
+.nright{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nright button{
+    width: 140px;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(29, 191, 115);
+    border: 1px solid #C5C6C9;
+    background-color: white;
+}
+
+.nleft input {
+    height: 35px;
+    width: 230px;
+    margin-left: 30px;
+    padding-left: 40px;
+    font-weight: 300;
+    border: 1px solid #C5C6C9;
+    border-radius: 10px 0px 0px 10px ;
+}
+
+.nleft{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nleft i{
+    position: absolute;
+    left: 37%;
+    top: 37%;
+    color: #C5C6C9;
+}
+
+.nleft button{
+    /* position: absolute; */
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    width: 60px;
+    background-color: #1cbf72;
+    border: #1cbf72;
+    color: white;
+    border-radius: 0 5px 5px 0px;
+}
+
+.nleft img{
+    height: 60px;
+    width: 120px;
+}
+
+.nright a:hover{
+    text-decoration:2px underline solid tomato;
+    transition: all 1s;
+
+}
+
+/* ////////////////////////////////banner1/////////////////////////////////////// */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(187, 205, 174);
+    padding-top: 20px;
+    padding-left: 150px;
+    gap: 35px;
+}
+
+.ro{
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+.co{
+    font-size: 13px;
+    padding-bottom: 30px;
+    color: tomato;
+}
+
+.bflax{
+    font-size: 3.4vw;
+    font-weight: 600;
+    width: 500px;
+    height: auto;
+}
+
+span{
+    color: aqua;
+}
+
+
